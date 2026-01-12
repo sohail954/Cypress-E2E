@@ -1,0 +1,24 @@
+{
+  "name": "cypress-e2e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sohail954/Cypress-E2E.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sohail954/Cypress-E2E/issues"
+  },
+  "homepage": "https://github.com/sohail954/Cypress-E2E#readme",
+  "devDependencies": {
+    "cypress": "^15.8.2"
+  }
+}
