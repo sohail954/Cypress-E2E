@@ -26,7 +26,7 @@
 
 
 Cypress.Commands.add('login', (email, password) => {
-     cy.visit('index.php?route=account/login')
+     cy.visit('/index.php?route=account/login')
      cy.get('#input-email').type(email)
      cy.get('#input-password').type(password)
      return cy.get('input.btn.btn-primary').click()

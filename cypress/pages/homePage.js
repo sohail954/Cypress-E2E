@@ -3,7 +3,7 @@ class HomePage{
     webLocators = {
         search_input: '.form-control.input-lg',
         click_search: '.btn.btn-default.btn-lg',
-        product: 'img[title="MacBook"]',
+        product: 'img[title="MacBook"].img-responsive',
         addtocart: '#button-cart',
         successMessages: '.alert.alert-success.alert-dismissible'
     }
@@ -16,7 +16,7 @@ class HomePage{
 
 
     addToCart(){
-        cy.get(this.webLocators.addtocart).click()
+        cy.get(this.webLocators.addtocart).should('be.visible').click()
     }
 
     verifySuccessMessage() {

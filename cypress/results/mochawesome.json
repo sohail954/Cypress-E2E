@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2026-02-09T08:51:55.183Z",
-    "end": "2026-02-09T08:52:24.402Z",
-    "duration": 29219,
+    "start": "2026-02-09T13:23:47.261Z",
+    "end": "2026-02-09T13:23:52.452Z",
+    "duration": 5191,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,16 +18,16 @@
   },
   "results": [
     {
-      "uuid": "3c4fe1c2-9e8c-4d16-b6cb-a31c9c7e5977",
+      "uuid": "0d8b908e-76c6-43fb-b06f-9e52c699e831",
       "title": "",
-      "fullFile": "cypress\\e2e\\tests\\addToCartTest.cy.js",
-      "file": "cypress\\e2e\\tests\\addToCartTest.cy.js",
+      "fullFile": "cypress\\e2e\\tests\\registerTest.cy.js",
+      "file": "cypress\\e2e\\tests\\registerTest.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "d1c74db6-ab83-4e22-b585-9f118f2ea871",
+          "uuid": "c406e376-8b01-4002-af47-ad96f8c29d73",
           "title": "test automation",
           "fullFile": "",
           "file": "",
@@ -35,32 +35,32 @@
           "afterHooks": [],
           "tests": [
             {
-              "title": "Add to Cart Flow",
-              "fullTitle": "test automation Add to Cart Flow",
+              "title": "register flow",
+              "fullTitle": "test automation register flow",
               "timedOut": null,
-              "duration": 29117,
+              "duration": 5148,
               "state": "passed",
-              "speed": "slow",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "console.log(_testData.default); // Log the data to check if it's loaded correctly\nhomePageObj.searchProduct(_testData.default.product.productName);\nhomePageObj.addToCart();\nhomePageObj.verifySuccessMessage().should('contain', _testData.default.message.successMessage).and('contain', _testData.default.product.productName);",
+              "code": "registerObj.openURL();\nregisterObj.enterFirstName(_registerData.default.firstName);\nregisterObj.enterlastName(_registerData.default.lastName);\nregisterObj.enterEmail(_registerData.default.email);\nregisterObj.enterTelephone(_registerData.default.telephone);\nregisterObj.enterPassword(_registerData.default.password);\nregisterObj.selectCheckbox();\nregisterObj.clickOnContinue();",
               "err": {},
-              "uuid": "a233e2cb-66a4-4b05-bae4-010ad7efd005",
-              "parentUUID": "d1c74db6-ab83-4e22-b585-9f118f2ea871",
+              "uuid": "b3c617a5-2eb4-439f-8325-64933f3032ba",
+              "parentUUID": "c406e376-8b01-4002-af47-ad96f8c29d73",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "a233e2cb-66a4-4b05-bae4-010ad7efd005"
+            "b3c617a5-2eb4-439f-8325-64933f3032ba"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 29117,
+          "duration": 5148,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
